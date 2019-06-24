@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <head>
+        <meta charset = "utf-8"/>
+    <title>Calorie Calculator</title>
+    </head>
+    <body>
+        <h1 id="head">Calorie Calculator</h1>
+        <p>This calculator gives the estimated number of calories<br> needed per day to maintain current body-weight.</p>
+        <div class="gender">
+            <label for="male">
+            Male: 
+            <input type="radio" name="choose" id="male"/>
+            </label>
+            <label for="female">
+            Female: 
+            <input type="radio" name="choose" id="female"/>
+            </label>
+        </div>
+
+        <div class="work">
+            <label for="work">Work:
+                <select id="work">
+                    <option value="0">None</option>
+                    <option value="820">Desk job</option>
+                    <option value="1020">Moderate activity</option>
+                    <option value="1400">High activity</option>
+                </select>
+            </label>
+        </div>
+        <div class="activity">
+            <label for="activity">Activity:
+            <select id="activity">
+                <option value="0">None</option>
+                <option value="3">Walking(slow)</option>
+                <option value="7">Walking(fast)</option>
+                <option value="7">Running(slow)</option>
+                <option value="15">Running(fast)</option>
+                <option value="7">Gym</option>
+                <option value="4">Bicycling(10km/h)</option>
+                <option value="7">Bicycling(22km/h)</option>
+                <option value="8">Swimming(slow)</option>
+                <option value="10">Swimming(fast)</option>
+            </select>
+            </label>
+            <div class="slider" id="slider">
+            <label for="duration">Duration:
+            <input type="range" value="0" min="0" max="480" step="5" id="duration">
+            <span id="slidervalue">0 min</span>
+            </label>
+        </div>
+        </div>
+
+        <div class="tooltable">
+        <table>
+            <tbody>
+            <input type="text" id ="age" placeholder="Age" autocomplete="on" step="any" min="1" value="">
+            <input type="text" id="height" placeholder="Height (cm)" autocomplete="on" step="any" min="1" value=""/>
+            <input type="text" id="weight" placeholder="Weight (kg)"autocomplete="on" step="any" min="1" value=""/>
+            <button id="btn">Calculate</button>
+            <button id="reset">Reset</button>
+            </tbody>
+        </table>
+        </div>
+
+        <p id="result"></p>
+
+        <script type ="text/javascript" src="script.js"></script>
+    </body>
+</html>
