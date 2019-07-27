@@ -15,7 +15,7 @@ let sliderbar = find("slider");
 
 
 //Showing slider value
-slider.oninput = function(){
+slider.oninput = function() {
     slidervalue.innerHTML = this.value + ' min';
 }
 

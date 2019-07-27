@@ -1,4 +1,12 @@
-html {
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+/*html {
     background: #100a1c;
     background-image:
       radial-gradient(55% 35% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
@@ -37,7 +45,7 @@ body {
     }
     
     button {
-        display: inline;
+        display: block;
         margin: 2px;
         margin-top: 40px;
         width: 24%;
@@ -59,7 +67,7 @@ body {
 
 
     input{
-        display: inline;
+        display: block;
         margin: auto;
         border-radius: 5px;
         font-size: 22px;
@@ -89,7 +97,7 @@ body {
 
   .gender, #male, #female{
       text-align: center;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-left: 10px;
       margin-right: 10px;
       font-size: 20px;
@@ -112,7 +120,7 @@ body {
   }
 
   .slider {
-      display: inline;
+      display: block;
       padding: 8px;
       opacity: 0.1;
   }
@@ -142,4 +150,3 @@ body {
       font-size: 20px;
       padding-top: 35px;
   }
-  

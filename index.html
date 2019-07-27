@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="style.css" type="text/css">
+<html lang="en">
+    
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset = "utf-8"/>
-    <title>Calorie Calculator</title>
+        <title>Calorie Calculator</title>
     </head>
-    <body>
-        <h1 id="head">Calorie Calculator</h1>
-        <p>This calculator gives the estimated number of calories<br> needed per day to maintain current body-weight.</p>
-        <div class="gender">
-            <label for="male">
-            Male: 
-            <input type="radio" name="choose" id="male"/>
-            </label>
-            <label for="female">
-            Female: 
-            <input type="radio" name="choose" id="female"/>
-            </label>
-        </div>
-
-        <div class="work">
+    <body class="bg-dark text-white">
+        <div class="p-5 mb-2">
+            <div class="container-fluid">
+                <div class="center-block"> 
+                <h1>Calorie Calculator</h1>
+                <p class="lead" id="info">This calculator gives the estimated number of calories needed per day to maintain current body-weight.</p>
+                </div>
+                <div class="row">
+                <div class="center-block">
+                    <label for="male">
+                Male: 
+                <input type="radio" name="choose" id="male"/>
+                </label>
+                <label for="female">
+                Female: 
+                <input type="radio" name="choose" id="female"/>
+            </label><br>
+    
             <label for="work">Work:
                 <select id="work">
                     <option value="0">None</option>
-                    <option value="820">Desk job</option>
-                    <option value="1020">Moderate activity</option>
+                    <option value="800">Desk job</option>
+                    <option value="1000">Moderate activity</option>
                     <option value="1400">High activity</option>
                 </select>
-            </label>
-        </div>
-        <div class="activity">
+            </label><br>
             <label for="activity">Activity:
             <select id="activity">
                 <option value="0">None</option>
@@ -49,23 +53,21 @@
             <input type="range" value="0" min="0" max="480" step="5" id="duration">
             <span id="slidervalue">0 min</span>
             </label>
-        </div>
-        </div>
+            </div>
 
-        <div class="tooltable">
-        <table>
-            <tbody>
-            <input type="text" id ="age" placeholder="Age" autocomplete="on" step="any" min="1" value="">
-            <input type="text" id="height" placeholder="Height (cm)" autocomplete="on" step="any" min="1" value=""/>
-            <input type="text" id="weight" placeholder="Weight (kg)"autocomplete="on" step="any" min="1" value=""/>
-            <button id="btn">Calculate</button>
-            <button id="reset">Reset</button>
-            </tbody>
-        </table>
-        </div>
-
-        <p id="result"></p>
-
-        <script type ="text/javascript" src="script.js"></script>
+            <input type="text" id ="age" placeholder="Age" autocomplete="on" step="any" min="1" value=""><br>
+            <input type="text" id="height" placeholder="Height (cm)" autocomplete="on" step="any" min="1" value=""/><br>
+            <input type="text" id="weight" placeholder="Weight (kg)"autocomplete="on" step="any" min="1" value=""/><br>
+            <button class="btn btn-primary" id="btn">Calculate</button>
+            <button class="btn btn-primary" id="reset">Reset</button>
+            <p id="result"></p>
+            </div>
+            </div>
+            <script type ="text/javascript" src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            </div>
+         </div>
     </body>
 </html>
