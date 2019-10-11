@@ -42,7 +42,7 @@ function actCal(){
 
 
 
-//Main calculating function
+//Main function
 function calculate() {
     const male = find("male");
     const female = find("female");
