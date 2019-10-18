@@ -14,7 +14,7 @@ let activity = find("activity");
 let sliderbar = find("slider");
 
 
-//Showing slider value
+//Slider value
 slider.oninput = function() {
     slidervalue.innerHTML = this.value + ' min';
 }
@@ -66,7 +66,7 @@ function calculate() {
 }
 
 
-//Reset function
+//Reset
 function reset() {
     find("age").value = '';
     find("height").value = '';
@@ -83,7 +83,7 @@ function reset() {
 }
 
 
-//Buttons & drop menu
+//Buttons
 button.onclick = calculate;
 resetButton.onclick = reset;
 slider.disabled = true;
